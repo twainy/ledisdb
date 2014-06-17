@@ -12,16 +12,6 @@ Ledisdb is a high performance nosql like redis based on leveldb written by go. I
 
         cd src/github.com/siddontang/ledisdb
 
-+ Install leveldb and snappy, if you have installed, skip.
-
-    I supply a simple shell to install leveldb and snappy, you can use: 
-
-        sh build_leveldb.sh
-
-    It will default install leveldb at /usr/local/leveldb and snappy at /usr/local/snappy
-
-+ Change LEVELDB_DIR and SNAPPY_DIR to real install path in dev.sh.
-
 + Then:
 
         . ./bootstap.sh 
