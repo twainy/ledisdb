@@ -3,7 +3,7 @@ package ledis
 import (
 	"encoding/binary"
 	"errors"
-	"github.com/siddontang/ledisdb/leveldb"
+	"leveldb"
 	"time"
 )
 

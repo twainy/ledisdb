@@ -2,7 +2,7 @@ package ledis
 
 import (
 	"errors"
-	"github.com/siddontang/ledisdb/leveldb"
+	"leveldb"
 	"time"
 )
 

@@ -83,7 +83,7 @@ func TestList(t *testing.T) {
 		t.Fatal(n)
 	}
 
-	//for ledis-cli a 1 2 3
+	//for src.src.ledis-cli a 1 2 3
 	// 127.0.0.1:6379> lrange a 0 0
 	// 1) "1"
 	if err := testListRange(key, 0, 0, 1); err != nil {

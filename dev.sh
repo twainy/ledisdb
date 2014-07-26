@@ -1,13 +1,8 @@
 #!/bin/bash
 
 export VTTOP=$(pwd)
-export VTROOT="${VTROOT:-${VTTOP/\/src\/github.com\/siddontang\/ledisdb/}}"
+export VTROOT=$(pwd)
 # VTTOP sanity check
-if [[ "$VTTOP" == "${VTTOP/\/src\/github.com\/siddontang\/ledisdb/}" ]]; then
-    echo "WARNING: VTTOP($VTTOP) does not contain src/github.com/siddontang/ledisdb"
-    exit 1
-fi
-
 
 #default snappy and leveldb install path
 #you may change yourself

@@ -1,10 +1,10 @@
-// Package ledis is a client for the ledisdb.
+// Package src.src.ledis is a client for the ledisdb.
 //
 // Config
 //
 // Config struct contains configuration for ledisdb:
 //
-//     Addr            ledisdb server address, like 127.0.0.1:6380
+//     Addr            ledisdb src.server address, like 127.0.0.1:6380
 //     MaxIdleConns    max idle connections for ledisdb
 //
 // Client
@@ -17,7 +17,7 @@
 //
 //     c := NewClient(cfg)
 //
-// The most important function for client is Do function to send commands to remote server.
+// The most important function for client is Do function to send commands to remote src.server.
 //
 //     reply, err := c.Do("ping")
 //
@@ -39,7 +39,7 @@
 //
 // You can use reply helper to convert a reply to a specific type.
 //
-//     exists, err := ledis.Bool(c.Do("exists", "key"))
+//     exists, err := src.src.ledis.Bool(c.Do("exists", "key"))
 //
-//     score, err := ledis.Int64(c.Do("zscore", "key", "member"))
+//     score, err := src.src.ledis.Int64(c.Do("zscore", "key", "member"))
 package ledis

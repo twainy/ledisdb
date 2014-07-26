@@ -1,7 +1,7 @@
 package ledis
 
 import (
-	"github.com/siddontang/ledisdb/leveldb"
+	"leveldb"
 )
 
 func (db *DB) FlushAll() (drop int64, err error) {

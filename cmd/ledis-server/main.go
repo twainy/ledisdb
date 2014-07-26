@@ -2,7 +2,7 @@ package main
 
 import (
 	"flag"
-	"github.com/siddontang/ledisdb/server"
+	"ledis"
 	"os"
 	"os/signal"
 	"runtime"

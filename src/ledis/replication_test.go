@@ -3,7 +3,6 @@ package ledis
 import (
 	"bytes"
 	"fmt"
-	"github.com/siddontang/ledisdb/leveldb"
 	"os"
 	"path"
 	"testing"

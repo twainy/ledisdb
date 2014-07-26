@@ -3,7 +3,6 @@ package server
 import (
 	"bytes"
 	"fmt"
-	"github.com/siddontang/ledisdb/leveldb"
 	"os"
 	"testing"
 	"time"

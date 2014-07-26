@@ -5,7 +5,7 @@ import (
 	"bytes"
 	"encoding/binary"
 	"github.com/siddontang/go-snappy/snappy"
-	"github.com/siddontang/ledisdb/leveldb"
+	"leveldb"
 	"io"
 	"os"
 )

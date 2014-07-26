@@ -383,7 +383,7 @@ func zrangebyscoreGeneric(c *client, reverse bool) error {
 	}
 
 	if offset < 0 {
-		//for ledis, if offset < 0, a empty will return
+		//for src.src.ledis, if offset < 0, a empty will return
 		//so here we directly return a empty array
 		c.writeArray([]interface{}{})
 		return nil

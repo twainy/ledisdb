@@ -24,9 +24,9 @@ const (
 
 /*
 index file format:
-ledis-bin.00001
-ledis-bin.00002
-ledis-bin.00003
+src.src.ledis-bin.00001
+src.src.ledis-bin.00002
+src.src.ledis-bin.00003
 
 log file format
 
@@ -165,7 +165,7 @@ func (l *BinLog) loadIndex() error {
 			return err
 		}
 
-		//like mysql, if server restart, a new binlog will create
+		//like mysql, if src.server restart, a new binlog will create
 		l.lastLogIndex++
 	}
 

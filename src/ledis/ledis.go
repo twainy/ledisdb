@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/siddontang/go-log/log"
-	"github.com/siddontang/ledisdb/leveldb"
+	"leveldb"
 	"sync"
 	"time"
 )

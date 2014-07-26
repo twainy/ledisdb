@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"encoding/binary"
 	"errors"
-	"github.com/siddontang/ledisdb/leveldb"
+	"leveldb"
 	"time"
 )
 

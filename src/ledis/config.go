@@ -2,7 +2,7 @@ package ledis
 
 import (
 	"github.com/siddontang/copier"
-	"github.com/siddontang/ledisdb/leveldb"
+	"leveldb"
 	"path"
 )
 

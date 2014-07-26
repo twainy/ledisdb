@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"flag"
 	"github.com/siddontang/ledisdb/ledis"
-	"github.com/siddontang/ledisdb/leveldb"
+	"leveldb"
 	"io/ioutil"
 )
 

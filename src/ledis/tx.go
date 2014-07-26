@@ -1,8 +1,8 @@
 package ledis
 
 import (
-	"github.com/siddontang/ledisdb/leveldb"
 	"sync"
+	"leveldb"
 )
 
 type tx struct {

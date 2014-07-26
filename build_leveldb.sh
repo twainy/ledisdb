@@ -7,6 +7,7 @@ ROOT_DIR=$(pwd)
 
 BUILD_DIR=/tmp/build_leveldb
 
+rm -rf $BUILD_DIR
 mkdir -p $BUILD_DIR
 
 cd $BUILD_DIR
