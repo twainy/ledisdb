@@ -165,7 +165,7 @@ func (l *BinLog) loadIndex() error {
 			return err
 		}
 
-		//like mysql, if src.server restart, a new binlog will create
+		//like mysql, if src.ledis.server restart, a new binlog will create
 		l.lastLogIndex++
 	}
 

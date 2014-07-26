@@ -55,6 +55,6 @@
 //
 // Binlog
 //
-// ledis supports binlog, so you can sync binlog to another server for replication. If you want to open binlog support, set UseBinLog to true in config.
+// ledis supports binlog, so you can sync binlog to another ledis.server for replication. If you want to open binlog support, set UseBinLog to true in config.
 //
 package ledis
