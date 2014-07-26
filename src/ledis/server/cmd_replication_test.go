@@ -6,6 +6,7 @@ import (
 	"os"
 	"testing"
 	"time"
+	"leveldb"
 )
 
 func checkDataEqual(master *App, slave *App) error {

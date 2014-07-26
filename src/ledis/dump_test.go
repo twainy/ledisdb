@@ -3,6 +3,7 @@ package ledis
 import (
 	"bytes"
 	"os"
+	"leveldb"
 	"testing"
 )
 

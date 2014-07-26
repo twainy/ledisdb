@@ -1,7 +1,7 @@
 package server
 
 import (
-	"ledis/client"
+	ledis_client "ledis/client"
 	"os"
 	"sync"
 	"testing"
@@ -10,16 +10,16 @@ import (
 var testAppOnce sync.Once
 var testApp *App
 
-var testLedisClient *client.Client
+var testLedisClient *ledis_client.Client
 
 func newTestLedisClient() {
-	cfg := new(ledis.Config)
+	cfg := new(ledis_client.Config)
 	cfg.Addr = "127.0.0.1:16380"
 	cfg.MaxIdleConns = 4
-	testLedisClient = ledis.NewClient(cfg)
+	testLedisClient = ledis_client.NewClient(cfg)
 }
 
-func getTestConn() *ledis.Conn {
+func getTestConn() *ledis_client.Conn {
 	startTestApp()
 	return testLedisClient.Get()
 }

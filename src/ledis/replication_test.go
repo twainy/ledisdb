@@ -6,6 +6,7 @@ import (
 	"os"
 	"path"
 	"testing"
+	"leveldb"
 )
 
 func checkLedisEqual(master *Ledis, slave *Ledis) error {
