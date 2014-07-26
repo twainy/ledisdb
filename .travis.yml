@@ -1,0 +1,26 @@
+language: go
+go:
+ - 1.2
+ - 1.3
+ - release
+
+script:
+ - go test -v ./...
+
+before_install:
+  - wget https://leveldb.googlecode.com/files/leveldb-1.15.0.tar.gz
+  - tar zxvf leveldb-1.15.0.tar.gz
+  - cd leveldb-1.15.0
+  - make
+  - sudo install -m644 -t "/usr/lib" "libleveldb.so" libleveldb.a
+  - sudo cp -P libleveldb.so "/usr/lib"
+  - sudo mkdir "/usr/include/leveldb"
+  - sudo install -m644 -t "/usr/include/leveldb" include/leveldb/*
+  - cd ..
+
+install:
+  - export GOPATH=$HOME/gopath/src/github.com/twainy/ledisdb
+  - mkdir -p $GOPATH/bin
+  - go get github.com/siddontang/go-log/log
+  - go get github.com/siddontang/go-snappy/snappy
+  - go get github.com/siddontang/copier
