@@ -2,6 +2,8 @@
 
 Ledisdb is a high performance NoSQL like Redis based on LevelDB written by go. It supports some advanced data structure like kv, list, hash and zset, and may be alternative for Redis.
 
+![travis_img](https://api.travis-ci.org/twainy/ledisdb.svg)
+
 ## Features
 
 + Rich advanced data structure: KV, List, Hash, ZSet, Bit.
